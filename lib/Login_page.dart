@@ -66,6 +66,13 @@ class _LoginPageState extends State<LoginPage> {
                     }
                   },
                   child: Text('Entrar'),
+                ),
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed('/home');
+                    // navegação nomeada entre a PageLogin e a HomePage
+                  },
+                  child: Text('Cadastrar - se'),
                 )
               ],
             ),
