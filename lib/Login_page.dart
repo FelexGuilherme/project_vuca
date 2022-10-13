@@ -56,6 +56,8 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 15),
                 RaisedButton(
+                  textColor: Colors.white,
+                  color: Color.fromARGB(255, 247, 116, 10),
                   onPressed: () {
                     if (email == 'gui' && password == '123') {
                       print('correto');
@@ -65,14 +67,21 @@ class _LoginPageState extends State<LoginPage> {
                       print('Login inválido');
                     }
                   },
-                  child: Text('Entrar'),
+                  child: Container(
+                      width: double.infinity,
+                      child: Text('Entrar', textAlign: TextAlign.center)),
                 ),
                 RaisedButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacementNamed('/home');
                     // navegação nomeada entre a PageLogin e a HomePage
                   },
-                  child: Text('Cadastrar - se'),
+                  child: Container(
+                      width: double.infinity,
+                      child: Text(
+                        'Cadastrar - se',
+                        textAlign: TextAlign.center,
+                      )),
                 )
               ],
             ),
