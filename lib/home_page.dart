@@ -26,7 +26,7 @@ class HomePageState extends State<HomePage> {
               leading: Icon(Icons.home),
               title: Text('Inicio'),
               onTap: () {
-                Navigator.of(context).pushReplacementNamed('/');
+                Navigator.of(context).pushReplacementNamed('/home');
               },
             ),
             ListTile(
@@ -41,26 +41,10 @@ class HomePageState extends State<HomePage> {
               leading: Icon(Icons.build_rounded),
               title: Text('Oficina'),
             ),
-            ListTile(
-              leading: Icon(Icons.construction_outlined),
-              title: Text('Configuração'),
-            ),
-            ListTile(
-              leading: Icon(Icons.document_scanner_sharp),
-              title: Text('Termo de uso'),
-            ),
-            ListTile(
-              leading: Icon(Icons.door_front_door_outlined),
-              title: Text('Logout'),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed('/');
-              },
-            ),
           ],
         ),
       ), //Menu "Hamburguer"
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 247, 116, 10),
         title: Text('Vuca Fleet'),
       ),
       body: Center(),

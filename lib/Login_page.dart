@@ -78,7 +78,10 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   child: Container(
                       width: double.infinity,
-                      child: Text('Cadastrar - se',textAlign: TextAlign.center,)),
+                      child: Text(
+                        'Cadastrar - se',
+                        textAlign: TextAlign.center,
+                      )),
                 )
               ],
             ),

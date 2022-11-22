@@ -45,9 +45,5 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
-	<Key>NSLocationWhenInUseUsageDescription</Key>
-	<string>This app need access to location when open.</string>
-	<Key>NSLocationAlwaysUsageDescription</Key>
-	<string>This app need access to location when in rhe backgroud.</string>
 </dict>
 </plist>
