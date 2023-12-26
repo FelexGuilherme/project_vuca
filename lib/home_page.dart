@@ -32,14 +32,31 @@ class HomePageState extends State<HomePage> {
             ListTile(
               leading: Icon(Icons.account_box),
               title: Text('Gestor de Frota'),
+              onTap: () {
+                
+              },
             ),
             ListTile(
               leading: Icon(Icons.speed_outlined),
               title: Text('Conduto'),
+              onTap: () {
+                
+              },
             ),
             ListTile(
               leading: Icon(Icons.build_rounded),
               title: Text('Oficina'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/map');
+                
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.logout_outlined),
+              title: Text('Sair'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
             ),
           ],
         ),

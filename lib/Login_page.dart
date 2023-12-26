@@ -55,27 +55,44 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(height: 15),
-                RaisedButton(
-                  textColor: Colors.white,
-                  color: Color.fromARGB(255, 247, 116, 10),
-                  onPressed: () {
-                    if (email == 'gui' && password == '123') {
-                      print('correto');
-                      Navigator.of(context).pushReplacementNamed('/home');
-                      // navegação nomeada entre a PageLogin e a HomePage
-                    } else {
-                      print('Login inválido');
-                    }
-                  },
-                  child: Container(
-                      width: double.infinity,
-                      child: Text('Entrar', textAlign: TextAlign.center)),
+                
+                ElevatedButton(
+                    onPressed: () {
+                      if (email == 'gui' && password == '123') {
+                        print('correto');
+                        Navigator.of(context).pushReplacementNamed('/home');
+                        // navegação nomeada entre a PageLogin e a HomePage
+                      } else {
+                        print('Login inválido');
+                      }
+                    },
+                    style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 20.0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0)),
+                        primary: Color.fromARGB(255, 247, 116, 10)),
+                    child: Text(
+                      "Entrar",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+
+                Container(
+                  height: 10,
                 ),
-                RaisedButton(
+
+                ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pushReplacementNamed('/home');
                     // navegação nomeada entre a PageLogin e a HomePage
                   },
+                  style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 20.0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0)),
+                        primary: Color.fromARGB(255, 247, 116, 10)),
                   child: Container(
                       width: double.infinity,
                       child: Text(
